@@ -1,10 +1,9 @@
 const Content = ({parts}) => {
-    console.log(parts)
     return (
         <div>
             {
-                parts.map( (x, index) => (
-                    <p key={index}>{x.part}</p>
+                parts.map( (x) => (
+                    <p key={x.id}>{x.name} : {x.exercises}</p>
                 ))
             }
         </div>

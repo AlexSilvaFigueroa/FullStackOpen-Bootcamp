@@ -1,4 +1,5 @@
-import Note from './Note'
+import React from 'react'
+import Note from './components/Note'
 
 const App = ({ notes }) => {
   return (
@@ -6,11 +7,11 @@ const App = ({ notes }) => {
       <h1>Notes</h1>
       <ul>
         {notes.map(note => 
-          <Note key={note.id} note={note} />
+            <Note key={note.id} note={note} />
         )}
       </ul>
     </div>
-  ) 
+  )
 }
 
 export default App
